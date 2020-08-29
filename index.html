@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+    <meta charSet="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Clock</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='style.css'>
+</head>
+
+<body>
+    <div id="time"></div>
+    <div id="date"></div>
+    <script>
+        setInterval(getTime, 100)
+        function getTime() {
+            var date = new Date();
+            time = date.toLocaleTimeString();
+            date = date.toLocaleDateString();
+            document.getElementById("time").innerHTML = time;
+            document.getElementById("date").innerHTML = date;
+        }
+    </script>
+</body>
+
+</html>\

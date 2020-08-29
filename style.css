@@ -1,0 +1,17 @@
+body{
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #111;
+}
+#time{
+    font-size: 10rem;
+    color:#777;
+
+}
+#date{
+    font-size: 5rem;
+    color:#999;
+
+}
